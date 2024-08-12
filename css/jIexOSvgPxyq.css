@@ -1,8 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --body-font: 'Roboto', sans-serif;
-    --heading-font: 'Yantramanav', sans-serif;
+    --heading-font: 'Epilogue', 'Yantramanav', sans-serif;
     --theme-color: #FDA31B;
     --theme-color2: #116E63;
     --theme-color-light: rgb(17, 110, 99, 0.09);
