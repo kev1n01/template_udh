@@ -2116,13 +2116,13 @@ label {
     font-size: 60px;
     background: var(--theme-color);
     margin-bottom: 25px;
-    box-shadow: 5px 5px 0 var(--theme-bg-light);
+    box-shadow: 2px 2px 0 var(--theme-bg-light);
     position: relative;
     transition: var(--transition)
 }
 
 .feature-item:hover .feature-icon {
-    transform: rotateY(360deg)
+    transform: scale(1.1);
 }
 
 .feature-icon img {
