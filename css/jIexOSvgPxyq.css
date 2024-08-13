@@ -21,7 +21,7 @@
     --border-info-color2: rgba(0, 0, 0, 0.05);
     --border-white-color: rgba(255, 255, 255, 0.08);
     --border-white-color2: rgba(255, 255, 255, 0.05);
-    --footer-bg: #000000;
+    --footer-bg: #333333;
     --footer-bg2: #116E63;
     --footer-text-color: #F5FAFF
 }
@@ -585,9 +585,11 @@ label {
 }
 
 .theme-btn {
-    font-size: 14px; /* Tamaño de fuente aumentado para mejor legibilidad */
+    font-size: 14px;
+    /* Tamaño de fuente aumentado para mejor legibilidad */
     color: var(--color-white);
-    padding: 16px 30px; /* Ajusta el padding para mayor espacio */
+    padding: 16px 30px;
+    /* Ajusta el padding para mayor espacio */
     transition: all .5s;
     text-transform: uppercase;
     position: relative;
@@ -596,14 +598,18 @@ label {
     letter-spacing: 1px;
     cursor: pointer;
     text-align: center;
-    white-space: nowrap; /* Asegura que el texto no se divida */
-    overflow: hidden; /* Evita el desbordamiento del texto */
+    white-space: nowrap;
+    /* Asegura que el texto no se divida */
+    overflow: hidden;
+    /* Evita el desbordamiento del texto */
     border: none;
     background: var(--theme-color);
     box-shadow: var(--box-shadow);
     z-index: 1;
-    display: inline-flex; /* Ajusta el ancho al contenido */
-    align-items: center; /* Centra el contenido verticalmente */
+    display: inline-flex;
+    /* Ajusta el ancho al contenido */
+    align-items: center;
+    /* Centra el contenido verticalmente */
 }
 
 .theme-btn::before {
@@ -907,7 +913,7 @@ label {
     }
 
     .navbar .nav-right-btn {
-        display: none;      
+        display: none;
     }
 }
 
@@ -1176,12 +1182,13 @@ label {
         font-size: 15px;
         margin-bottom: 5px;
         margin-top: 5px;
-        
+
     }
 
-    #adddd{
+    #adddd {
         margin-top: 30px;
     }
+
     .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item {
         padding-left: 0
     }
