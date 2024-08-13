@@ -116,7 +116,7 @@ h4 {
 }
 
 h5 {
-    font-size: 18px
+    font-size: 2px
 }
 
 h6 {
@@ -585,22 +585,25 @@ label {
 }
 
 .theme-btn {
-    font-size: 14px;
+    font-size: 14px; /* Tamaño de fuente aumentado para mejor legibilidad */
     color: var(--color-white);
-    padding: 14px 20px;
+    padding: 16px 30px; /* Ajusta el padding para mayor espacio */
     transition: all .5s;
     text-transform: uppercase;
     position: relative;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 1px;
     cursor: pointer;
     text-align: center;
-    overflow: hidden;
+    white-space: nowrap; /* Asegura que el texto no se divida */
+    overflow: hidden; /* Evita el desbordamiento del texto */
     border: none;
     background: var(--theme-color);
     box-shadow: var(--box-shadow);
-    z-index: 1
+    z-index: 1;
+    display: inline-flex; /* Ajusta el ancho al contenido */
+    align-items: center; /* Centra el contenido verticalmente */
 }
 
 .theme-btn::before {
@@ -904,7 +907,7 @@ label {
     }
 
     .navbar .nav-right-btn {
-        display: none
+        display: none;      
     }
 }
 
@@ -1170,10 +1173,15 @@ label {
 
     .mega-menu .mega-content h5 {
         color: var(--theme-color);
-        font-size: 22px;
-        margin-bottom: 20px
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        
     }
 
+    #adddd{
+        margin-top: 30px;
+    }
     .navbar .nav-item.mega-menu .dropdown-menu .dropdown-item {
         padding-left: 0
     }
