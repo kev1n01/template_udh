@@ -1973,7 +1973,9 @@ label {
 }
 
 .course-details-img {
-    position: relative
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .course-details-img .play-btn {
@@ -1985,6 +1987,13 @@ label {
 
 .course-details img {
     border-radius: 10px
+}
+
+.course-details {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .course-single-info .single-info {
@@ -3575,10 +3584,12 @@ label {
 }
 
 .widget {
-    background: var(--theme-bg-light);
+    background: #fff;
     padding: 30px;
     margin-bottom: 30px;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    
 }
 
 .widget .widget-title {
@@ -5903,4 +5914,287 @@ label {
     width: 100%;
     height: 100%;
     opacity: .95
+}
+.course-single-area {
+    background: linear-gradient(to right, #ffffff33, #4e50521e);
+    padding: 20px 0;
+}
+
+.logo-box {
+    padding: 10px;
+    box-shadow: var(--box-shadow); /* Usa la variable definida para el box-shadow */
+    border-radius: 10px; /* Opcional: Redondea las esquinas del contenedor */
+    background: #ffffff; /* Opcional: Fondo blanco para el contenedor */
+    text-align: center; /* Opcional: Centra el contenido dentro del contenedor */
+    margin-bottom: 20px;
+}
+
+.logo-box img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/*.course-single-area {
+    background-image: url('../images/background7.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 20px 0; 
+}
+*/
+/*.course-single-area {
+    position: relative; 
+    background-image: url('../images/background6.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 20px 0; 
+    overflow: hidden; 
+}
+
+.course-single-area::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
+}
+
+.course-single-area > * {
+    position: relative;
+    z-index: 2; 
+}
+*/
+
+
+/* ----------------------------------------------------------*/
+
+/* Contenedor del carrusel */
+.carousel {
+    position: relative;
+    max-width: 600px; /* Ajusta el tamaño máximo según lo necesites */
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd; /* Opcional: Añade un borde al carrusel */
+    border-radius: 10px; /* Opcional: Redondea las esquinas */
+}
+
+/* Contenedor de las imágenes */
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave para el desplazamiento */
+}
+
+.carousel-images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Botones de navegación */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* -----------------------------------------------------------------------------*/
+.hero-section {
+    position: relative;
+}
+
+.hero-single {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-single::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -.5px;
+    top: 0;
+    background: rgba(11, 28, 57, .7);
+    z-index: -1;
+}
+
+.hero-single .hero-content {
+    height: 100%;
+}
+
+.hero-single .hero-content .hero-title {
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.hero-single .hero-content .hero-title span {
+    color: var(--theme-color);
+}
+
+.hero-single .hero-content .hero-sub-title {
+    display: inline-block;
+    color: var(--theme-color);
+    font-size: 25px;
+    letter-spacing: 6px;
+    font-weight: 800;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--theme-color);
+}
+
+.hero-single .hero-content p {
+    color: var(--color-white);
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-single .hero-content .hero-btn {
+    gap: 1rem;
+    display: flex;
+    margin-top: 35px;
+    justify-content: start;
+}
+
+.hero-single .hero-img-wrapper {
+    position: absolute;
+    right: 100px;
+    bottom: 120px;
+    width: 50%;
+    height: 0; /* Para mantener una proporción fija */
+    padding-bottom: 50%; /* Esto mantiene la proporción del contenedor */
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero-single .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+}
+
+.hero-slider.owl-theme .owl-nav {
+    margin-top: 0;
+}
+
+.hero-slider.owl-theme .owl-nav [class*=owl-] {
+    color: var(--color-white);
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    background: var(--slider-arrow-bg);
+    display: inline-block;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.hero-slider.owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--color-white);
+    color: var(--theme-color);
+}
+
+.hero-slider.owl-theme .owl-nav .owl-prev {
+    left: 40px;
+}
+
+.hero-slider.owl-theme .owl-nav .owl-next {
+    right: 40px;
+}
+
+.hero-slider.owl-theme .owl-nav .owl-prev,
+.hero-slider.owl-theme .owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+@media all and (max-width:1199px) {
+    .hero-single .hero-content .hero-title {
+        font-size: 37px;
+    }
+
+    .hero-slider.owl-theme .owl-nav .owl-prev,
+    .hero-slider.owl-theme .owl-nav .owl-next {
+        top: unset;
+        bottom: 30px !important;
+    }
+
+    .hero-slider.owl-theme .owl-nav .owl-prev {
+        left: unset;
+        right: 120px;
+    }
+
+    .hero-slider.owl-theme .owl-nav .owl-next {
+        right: 40px;
+    }
+}
+
+@media all and (max-width:991px) {
+    .hero-single .hero-content .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-single .hero-img-wrapper {
+        width: 70%; /* Ajusta el tamaño del contenedor en pantallas medianas */
+        padding-bottom: 70%; /* Mantiene la relación de aspecto */
+        right: 20px; /* Ajuste del margen */
+        bottom: 60px; /* Ajuste del margen inferior */
+    }
+}
+
+@media all and (max-width:767px) {
+    .hero-single .hero-content .hero-sub-title {
+        font-size: 15px;
+    }
+
+    .hero-single .hero-content .hero-btn {
+        gap: 1rem;
+    }
+
+    .hero-single .hero-img-wrapper {
+        width: 90%; /* Ajusta el tamaño del contenedor en pantallas pequeñas */
+        padding-bottom: 90%; /* Mantiene la relación de aspecto */
+    }
 }
