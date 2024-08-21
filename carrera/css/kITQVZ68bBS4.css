@@ -5921,7 +5921,7 @@ label {
 }
 
 .logo-box {
-    padding: 10px;
+    padding: 20px;
     box-shadow: var(--box-shadow); /* Usa la variable definida para el box-shadow */
     border-radius: 10px; /* Opcional: Redondea las esquinas del contenedor */
     background: #ffffff; /* Opcional: Fondo blanco para el contenedor */
