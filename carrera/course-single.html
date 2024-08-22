@@ -42,7 +42,75 @@
             opacity: 1;
             visibility: visible;
         }
+
+        #button-chat {
+            position: fixed;
+            bottom: 160px;
+            right: 30px;
+            z-index: 99;
+            font-size: 25px;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            color: var(--color-white);
+            background-color: var(--theme-color);
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            box-shadow: var(--box-shadow2);
+            transition: var(--transition);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #chatbot-container {
+            position: fixed;
+            bottom: 160px;
+            right: 30px;
+            z-index: 2147483647;
+            display: none;
+            width: 450px;
+            height: 550px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 2px 10px 10px 0 rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            animation: fadeIn 0.5s;
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        @media (min-width: 768px) {
+            #chatbot-container {
+                width: 350px;
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #chatbot-container {
+                width: 350px;
+                height: 500px;
+            }
+        }
     </style>
+
 </head>
 
 <body>
@@ -327,14 +395,18 @@
                                 <div class="hero-content">
 
                                     <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                        Explora el futuro de la <span>computación cuántica</span> con nuestras innovaciones
+                                        Explora el futuro de la <span>computación cuántica</span> con nuestras
+                                        innovaciones
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s">
-                                        La próxima generación de computadoras está aquí. Nuestra plataforma de computación cuántica está revolucionando el procesamiento de datos con una velocidad sin precedentes. Descubre cómo esta tecnología puede resolver problemas complejos en segundos y transformar industrias enteras.
+                                        La próxima generación de computadoras está aquí. Nuestra plataforma de
+                                        computación cuántica está revolucionando el procesamiento de datos con una
+                                        velocidad sin precedentes. Descubre cómo esta tecnología puede resolver
+                                        problemas complejos en segundos y transformar industrias enteras.
                                     </p>
-                                    
-                                    
-                                    
+
+
+
                                     <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
                                         <a href="#" class="theme-btn">Conoce más<i
                                                 class="fas fa-arrow-right-long"></i></a>
@@ -351,14 +423,18 @@
                                 <div class="hero-content">
 
                                     <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                        Conquista el mundo de las <span>criptomonedas y blockchain</span> con nuestra tecnología
+                                        Conquista el mundo de las <span>criptomonedas y blockchain</span> con nuestra
+                                        tecnología
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s">
-                                        La tecnología blockchain está redefiniendo la forma en que se manejan las transacciones y se asegura la información. Descubre cómo nuestras soluciones en criptomonedas pueden ofrecer seguridad, transparencia y eficiencia en todos tus proyectos financieros.
+                                        La tecnología blockchain está redefiniendo la forma en que se manejan las
+                                        transacciones y se asegura la información. Descubre cómo nuestras soluciones en
+                                        criptomonedas pueden ofrecer seguridad, transparencia y eficiencia en todos tus
+                                        proyectos financieros.
                                     </p>
-                                    
-                                    
-                                    
+
+
+
                                     <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
                                         <a href="#" class="theme-btn">Conoce más<i
                                                 class="fas fa-arrow-right-long"></i></a>
@@ -375,14 +451,18 @@
                                 <div class="hero-content">
 
                                     <h1 class="hero-title" data-animation="fadeInRight" data-delay=".50s">
-                                        Optimiza tu vida con nuestras soluciones de <span>Internet de las Cosas (IoT)</span>
+                                        Optimiza tu vida con nuestras soluciones de <span>Internet de las Cosas
+                                            (IoT)</span>
                                     </h1>
                                     <p data-animation="fadeInLeft" data-delay=".75s">
-                                        Conéctate a la era digital con nuestras innovadoras soluciones IoT. Desde casas inteligentes hasta fábricas automatizadas, descubre cómo la integración de dispositivos conectados puede mejorar tu eficiencia y ofrecer una experiencia personalizada en todos los aspectos de tu vida.
+                                        Conéctate a la era digital con nuestras innovadoras soluciones IoT. Desde casas
+                                        inteligentes hasta fábricas automatizadas, descubre cómo la integración de
+                                        dispositivos conectados puede mejorar tu eficiencia y ofrecer una experiencia
+                                        personalizada en todos los aspectos de tu vida.
                                     </p>
-                                    
-                                    
-                                    
+
+
+
                                     <div class="hero-btn" data-animation="fadeInUp" data-delay="1s">
                                         <a href="#" class="theme-btn">Conoce más<i
                                                 class="fas fa-arrow-right-long"></i></a>
@@ -395,7 +475,7 @@
             </div>
         </div>
 
-        
+
         <div class="course-single-area py-120">
             <div class="container">
                 <div class="course-single-wrapper">
@@ -404,16 +484,19 @@
                             <div class="logo-box mobile" style="display: none;">
                                 <img src="images/logo_pa.png" alt="" style="width: 100%; height: auto;">
                             </div>
-                            <div class="course-details" >
+                            <div class="course-details">
                                 <div class="course-details-img mb-30" style="margin-bottom: 20px;">
                                     <img src="images/fondo.png" alt="thumb">
                                 </div>
                                 <h3 class="mb-20">Ingeniería de Sistemas e Informática</h3>
                                 <p class="mb-20">
                                     La Facultad de Ingeniería de Sistemas e Informática de la Universidad de Huánuco
-                                    se dedica a formar profesionales altamente capacitados en el ámbito de la tecnología y la informática. Nuestro enfoque académico
-                                    integra tanto la teoría como la práctica, preparando a los estudiantes para enfrentar los desafíos del mundo digital actual. A través de un currículo
-                                    actualizado y recursos modernos, buscamos desarrollar habilidades críticas en análisis, diseño y gestión de sistemas informáticos, así como en la
+                                    se dedica a formar profesionales altamente capacitados en el ámbito de la tecnología
+                                    y la informática. Nuestro enfoque académico
+                                    integra tanto la teoría como la práctica, preparando a los estudiantes para
+                                    enfrentar los desafíos del mundo digital actual. A través de un currículo
+                                    actualizado y recursos modernos, buscamos desarrollar habilidades críticas en
+                                    análisis, diseño y gestión de sistemas informáticos, así como en la
                                     resolución de problemas complejos y la innovación tecnológica.
                                 </p>
                                 <div class="row mb-4">
@@ -424,25 +507,35 @@
                                         <img src="images/udh1.jpg" alt="" class="img-fluid rounded">
                                     </div>
                                 </div>
-    
+
                                 <div class="my-4">
                                     <h3 class="mb-3">Requisitos del Curso</h3>
                                     <ul class="course-single-list">
-                                        <li><i class="fas fa-check"></i>Conocimientos previos en matemáticas y lógica.</li>
-                                        <li><i class="fas fa-check"></i>Habilidad para resolver problemas técnicos complejos.</li>
-                                        <li><i class="fas fa-check"></i>Interés en las tecnologías de la información y la computación.</li>
-                                        <li><i class="fas fa-check"></i>Capacidad para trabajar en equipo y comunicarse efectivamente.</li>
-                                        <li><i class="fas fa-check"></i>Compromiso con el aprendizaje continuo y la adaptación a nuevas tecnologías.</li>
+                                        <li><i class="fas fa-check"></i>Conocimientos previos en matemáticas y lógica.
+                                        </li>
+                                        <li><i class="fas fa-check"></i>Habilidad para resolver problemas técnicos
+                                            complejos.</li>
+                                        <li><i class="fas fa-check"></i>Interés en las tecnologías de la información y
+                                            la computación.</li>
+                                        <li><i class="fas fa-check"></i>Capacidad para trabajar en equipo y comunicarse
+                                            efectivamente.</li>
+                                        <li><i class="fas fa-check"></i>Compromiso con el aprendizaje continuo y la
+                                            adaptación a nuevas tecnologías.</li>
                                     </ul>
                                 </div>
-    
+
                                 <div class="my-4">
                                     <h3 class="mb-3">Experiencia Profesional</h3>
-                                    <p>En el programa de Ingeniería de Sistemas e Informática de la UDH, los estudiantes tienen la oportunidad de adquirir experiencia profesional a
-                                        través de prácticas y proyectos reales. La universidad colabora con empresas y organizaciones locales para proporcionar a los estudiantes experiencias
-                                        prácticas que complementan su formación académica. Los egresados del programa han demostrado una sólida capacidad para aplicar sus conocimientos
-                                        en el campo laboral, destacándose en roles de desarrollo de software, administración de sistemas y gestión de proyectos tecnológicos. La
-                                        experiencia profesional adquirida durante el curso permite a los estudiantes enfrentar desafíos reales y prepararse para una exitosa carrera en el ámbito
+                                    <p>En el programa de Ingeniería de Sistemas e Informática de la UDH, los estudiantes
+                                        tienen la oportunidad de adquirir experiencia profesional a
+                                        través de prácticas y proyectos reales. La universidad colabora con empresas y
+                                        organizaciones locales para proporcionar a los estudiantes experiencias
+                                        prácticas que complementan su formación académica. Los egresados del programa
+                                        han demostrado una sólida capacidad para aplicar sus conocimientos
+                                        en el campo laboral, destacándose en roles de desarrollo de software,
+                                        administración de sistemas y gestión de proyectos tecnológicos. La
+                                        experiencia profesional adquirida durante el curso permite a los estudiantes
+                                        enfrentar desafíos reales y prepararse para una exitosa carrera en el ámbito
                                         de la tecnología.
                                     </p>
                                 </div>
@@ -485,14 +578,17 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="theme-btn">Más Información<i class="fas fa-arrow-right-long"></i></a>
+                                    <a href="#" class="theme-btn">Más Información<i
+                                            class="fas fa-arrow-right-long"></i></a>
                                 </div>
                                 <div class="widget">
                                     <h4 class="widget-title">Características de la carrera</h4>
                                     <div class="course-feature-list">
                                         <a href="#"><i class="far fa-book-open"></i> Cursos <span>67</span></a>
-                                        <a href="#"><i class="far fa-pencil"></i> Metodología <span>Teórica y Práctica</span></a>
-                                        <a href="#"><i class="far fa-location-dot"></i> Location <span>La esperanza</span></a>
+                                        <a href="#"><i class="far fa-pencil"></i> Metodología <span>Teórica y
+                                                Práctica</span></a>
+                                        <a href="#"><i class="far fa-location-dot"></i> Location <span>La
+                                                esperanza</span></a>
                                         <a href="#"><i class="far fa-users"></i> Infraestructura <span>Si</span></a>
                                         <a href="#"><i class="far fa-check-circle"></i> Bachiller <span>Si</span></a>
                                         <a href="#"><i class="far fa-graduation-cap"></i> Titulación <span>Si</span></a>
@@ -502,7 +598,8 @@
                                     <h4 class="widget-title">Documentos</h4>
                                     <div class="course-feature-list">
                                         <a href="pdf/P06.pdf"><i class="far fa-caret-right"></i> Plan de estudios</a>
-                                        <a href="pdf/mallaingsistemas.pdf"><i class="far fa-caret-right"></i> Malla curricular</a>
+                                        <a href="pdf/mallaingsistemas.pdf"><i class="far fa-caret-right"></i> Malla
+                                            curricular</a>
                                     </div>
                                 </div>
                             </div>
@@ -511,18 +608,18 @@
                 </div>
             </div>
             <div class="partner-area bg pt-50 pb-50" style="margin-top: 80px;">
-            <div class="container">
-                <div class="partner-wrapper partner-slider owl-carousel owl-theme">
-                    <img src="images/2.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
-                    <img src="images/4.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
-                    <img src="images/5.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
-                    <img src="images/6.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
-                    <img src="images/8.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
-                    <img src="images/9.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
-                    <img src="images/1.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                <div class="container">
+                    <div class="partner-wrapper partner-slider owl-carousel owl-theme">
+                        <img src="images/2.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                        <img src="images/4.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                        <img src="images/5.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                        <img src="images/6.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                        <img src="images/8.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                        <img src="images/9.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                        <img src="images/1.png" alt="thumb" style="width: 200px !important; max-width: 200px;">
+                    </div>
                 </div>
             </div>
-        </div>
 
     </main>
 
@@ -642,8 +739,32 @@
 
     <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
     <a target="_blank" href="https://wa.link/ek3o0p" id="button-whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <button id="button-chat"><i class="far fa-comment" id="icon-chat"></i></button>
 
+    <div id="chatbot-container">
+        <iframe src="https://chat-react-ebon-eight.vercel.app" frameborder="2"></iframe>
+    </div>
 
+    <script>
+        const button = document.getElementById("button-chat");
+        const chatbot_container = document.getElementById("chatbot-container");
+        const icon_chat = document.getElementById("icon-chat");
+
+        button.addEventListener("click", () => {
+            chatbot_container.style.display = "block";
+        });
+
+        // Escucha el clic en todo el documento
+        window.onclick = function (event) {
+
+            // Si el clic no fue dentro del contenedor ni en el botón, esconder el contenedor
+            if (!chatbot_container.contains(event.target) && event.target !== button && event.target !== icon_chat) {
+                chatbot_container.style.display = "none";
+                console.log('click outside');
+            }
+        };
+
+    </script>
     <script data-cfasync="false" src="js/jErCCD58ujhM.js"></script>
     <script src="js/dzDewvoU1NX2.js"></script>
     <script src="js/L8aDOw4FG6ho.js"></script>
