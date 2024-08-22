@@ -1620,6 +1620,7 @@ label {
 .about-left {
     position: relative;
     padding-right: 30px;
+    padding-left: 30px;
     z-index: 1
 }
 
@@ -1639,8 +1640,8 @@ label {
 .about-left::after {
     content: "";
     position: absolute;
-    top: -25px;
-    left: -25px;
+    top: -15px;
+    left: -1px;
     width: 250px;
     height: 70%;
     border: 12px solid var(--theme-color);
@@ -1786,6 +1787,23 @@ label {
     color: var(--theme-color)
 }
 
+.video-content-course{
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.video-wrapper-course{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    height: 350px;
+    z-index: 100;
+}
 @media all and (max-width:991px) {
     .about-right {
         margin-top: 70px
@@ -1794,7 +1812,13 @@ label {
 
 @media all and (max-width:767px) {
     .about-left::after {
-        left: -20px
+        left: 5px;
+        width: 120px;
+    }
+
+    .about-left::before {
+        height: 100px;
+        width: 130px;
     }
 
     .about-item {
