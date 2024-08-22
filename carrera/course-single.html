@@ -112,13 +112,22 @@
                 height: 500px;
             }
         }
+
         .swiper {
-  width: 600px;
-  height: 300px;
-}
-.swiper-pagination-bullet-active{
-  background: var(--theme-color);
-}
+            width: 700px;
+            height: 300px;
+        }
+
+        .swiper-pagination-bullet {
+            background: #d9d9d9;
+            opacity: 1;
+            width: 20px;
+            border-radius: 10px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--theme-color);
+        }
     </style>
 
 </head>
@@ -515,37 +524,38 @@
                                     </div>
                                 </div>
 
-                                <h3 class="mb-20 wow fadeInLeft">Ingeniería de Sistemas e Informática</h3>
+                                <h4 class="mb-20 wow fadeInLeft">Ingeniería de Sistemas e Informática</h4>
                                 <p class="mb-20 wow fadeInLeft">
-                                    La Facultad de Ingeniería de Sistemas e Informática de la Universidad de Huánuco
-                                    se dedica a formar profesionales altamente capacitados en el ámbito de la tecnología
+                                    Nuestro programa acádemico de Ingeniería de Sistemas e Informática se dedica
+                                    a formar profesionales altamente capacitados en el ámbito de la tecnología
                                     y la informática. Nuestro enfoque académico
                                     integra tanto la teoría como la práctica, preparando a los estudiantes para
-                                    enfrentar los desafíos del mundo digital actual.
+                                    enfrentar los desafíos del mundo tecnológico actual.
                                 </p>
                                 <div class="row mb-4">
-                                    
+
                                     <!-- Slider main container -->
-                                    <div class="swiper">
+                                    <div class="swiper rounded">
                                         <!-- Additional required wrapper -->
                                         <div class="swiper-wrapper">
                                             <!-- Slides -->
-                                            <div class="swiper-slide"> <img src="images/img_bg_alt.jpg" alt="" class="img-fluid rounded"></div>
-                                            <div class="swiper-slide"><img src="images/img_bg_alt_aldo.jpg" alt="" class="img-fluid rounded"></div>
-                                            <div class="swiper-slide"><img src="images/img_bg_alt2.jpg" alt="" class="img-fluid rounded"></div>
-                                            
+                                            <div class="swiper-slide"> <img src="images/img_bg_alt.jpg" alt=""
+                                                    class="img-fluid rounded"></div>
+                                            <div class="swiper-slide"><img src="images/img_bg_alt_aldo.jpg" alt=""
+                                                    class="img-fluid rounded"></div>
+                                            <div class="swiper-slide"><img src="images/img_bg_alt2.jpg" alt=""
+                                                    class="img-fluid rounded"></div>
+
                                         </div>
                                         <!-- If we need pagination -->
                                         <div class="swiper-pagination"></div>
-                                        
-                                        <!-- If we need scrollbar -->
-                                        <div class="swiper-scrollbar"></div>
+
                                     </div>
 
                                 </div>
 
                                 <div class="my-4">
-                                    <h3 class="mb-3 wow fadeInLeft">Requisitos del Curso</h3>
+                                    <h4 class="mb-3 wow fadeInLeft">Requisitos del Curso</h4>
                                     <ul class="course-single-list">
                                         <li class="wow fadeInDown"><i class="fas fa-check"></i>Conocimientos previos en
                                             matemáticas y lógica.
@@ -566,7 +576,7 @@
                                 </div>
 
                                 <div class="my-4">
-                                    <h3 class="mb-3 wow fadeInLeft">Experiencia Profesional</h3>
+                                    <h4 class="mb-3 wow fadeInLeft">Experiencia Profesional</h4>
                                     <p>En el programa de Ingeniería de Sistemas e Informática de la UDH, los estudiantes
                                         tienen la oportunidad de adquirir experiencia profesional a
                                         través de prácticas y proyectos reales. La universidad colabora con empresas y
@@ -824,17 +834,20 @@
 
         const swiper = new Swiper('.swiper', {
             loop: true,
-
+            centeredSlides: true,
             pagination: {
                 el: '.swiper-pagination',
+                clickable: true,
             },
             spaceBetween: 10,
             grabCursor: true,
-            speed: 5000,
+            // speed: 4000,
             autoplay: {
-                delay: 1000,
+                delay: 2500,
                 disableOnInteraction: true,
             },
+            parallax: true,
+
         })
     </script>
 
